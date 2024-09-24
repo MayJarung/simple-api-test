@@ -10,7 +10,7 @@ def index():
 
 @app.route("/getcode", methods=["GET"])
 def getcode():
-    return "getcode Hello 12345"
+    return "0.0 ---- yeyyyyyy ---- >.< ---- wooooooo ---- 0.o ---- wowwwwww ---- T.T"
 
 
 @app.route("/plus/<num1>/<num2>", methods=["GET"])
@@ -21,7 +21,7 @@ def calculate(num1, num2):
 
         results = f"{num1} + {num2} = {num1 + num2}"
     except:
-        results = {"error_msg": "inputs must be numbers"}
+        results = {"error_msg": "inputs must be numbers ka"}
 
     return results
 

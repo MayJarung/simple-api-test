@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Clone simple-api repository') {
             steps {
-                git url: 'https://github.com/Horiiya/simple-api-test.git', branch: 'main'
+                git url: 'https://github.com/MayJarung/simple-api-test.git', branch: 'main'
             }
         }
 
@@ -39,8 +39,8 @@ pipeline {
             steps {
                 script {
                     sh 'docker login'
-                    sh 'docker build -t horiii/cicd:lastest .'
-                    sh 'docker push horiii/cicd:lastest'
+                    sh 'docker build -t may/cicd:lastest .'
+                    sh 'docker push may/cicd:lastest'
                 }
             }
         }
